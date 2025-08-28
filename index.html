@@ -21,44 +21,57 @@
 
 </head>
 <body class="hind-madurai">
-      <!-- Top Ber Section -->
-    <div class="nav-parent-div flex justify-between items-center py-4">
-        <!-- Left Top Ber Section -->
-        <div class="lift-div flex gap-4 ml-6 md:ml-24 items-center">
-            <img class="w-14 h-auto" src="./assets/logo.png" alt="">
-            <h1 class="text-[20px] font-bold">Emergence <br> Services</h1>
-        </div>
+        <!-- Top Ber Section -->
+        <div class="nav-parent-div flex flex-col md:flex-row justify-between items-center py-4 px-4 md:px-12 gap-3">
+            <!-- Left Top Bar Section -->
+            <div class="left-div flex gap-4 items-center">
+                <img class="w-14 h-auto" src="./assets/logo.png" alt="">
+                <h1 class="text-[20px] font-bold">
+                    Emergence <br class="hidden md:block"> Services
+                </h1>
+            </div> 
 
-        <!-- Right Top Ber Section -->
-        <div class="right-div flex gap-4 mr-6 md:mr-24">
-            <button class="count px-8 py-2 bg-[#41FF6B]/10 text-black font-bold rounded-3xl flex items-center gap-2"><img class=" w-[20px] h-[20px]" src="./assets/heart.png" alt=""> <span>0</span></button>
-            <button class=" coins px-8 py-2 flex gap-2 items-center bg-[#41FF6B]/10 text-black font-bold rounded-3xl"><img class=" w-[20px] h-[20px]" src="./assets/coin.png" alt=""> <span>100</span></button>
-            <button class="px-8 py-2 bg-[#00A63E] text-white rounded-3xl">Copy</button>
+            <!-- Right Top Bar Section -->
+            <div class="right-div flex gap-3 md:gap-4 mt-3 md:mt-0">
+                <button class="count px-6 py-2 bg-[#41FF6B]/10 text-black font-bold rounded-3xl flex items-center gap-2">
+                    <img class="w-[20px] h-[20px]" src="./assets/heart.png" alt="">
+                    <span>0</span>
+                </button>
+
+                <button class="coins px-6 py-2 flex items-center gap-2 bg-[#41FF6B]/10 text-black font-bold rounded-3xl">
+                    <img class="w-[20px] h-[20px]" src="./assets/coin.png" alt="">
+                    <span>100</span>
+                </button>
+
+                <button class="px-6 py-2 bg-[#00A63E] text-white rounded-3xl">
+                    Copy
+                </button>
+            </div>
         </div>
-    </div>
 
     <!-- Hero Section -->
 
-    <div class="h-[250px] bg-gradient-to-r from-[#013223]/100 via-[#006747]/100 to-[#013223]/100 flex justify-center items-center text-center p-2">
-        <div>
-            <img class="w-24 h-auto mx-auto mb-2" src="./assets/logo-dark.png" alt="Logo">
-            <h1 class="text-white text-[40px] font-bold mb-2">Emergency Service Directory</h1>
-            <p class="text-white text-[20px]">
-            Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh
-            </p>
-        </div>
-    </div>
+        <div class="h-auto bg-gradient-to-r from-[#013223]/100 via-[#006747]/100 to-[#013223]/100 flex justify-center items-center text-center p-4">
+            <div>
+                <img class="w-24 h-auto mx-auto mb-2" src="./assets/logo-dark.png" alt="Logo">
+                <h1 class="text-white text-[40px] font-bold mb-2">Emergency Service Directory</h1>
+                <p class="text-white text-[20px]">
+                Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh
+                </p>
+            </div>
+        </div> 
 
     <!-- Service Section -->
 
-    <div class="bg-[#F5FFF6] flex gap-8  p-20">
+   <div class="bg-[#F5FFF6] flex flex-col md:flex-row gap-8 p-8 md:p-20"> 
         
         <!-- Left div - 80% -->
             
        
-            <div class="w-4/5   py-12 flex-1">
-                    <div class="grid grid-cols-3 gap-5">
-                        <div class="card w-[450px] h-[360px] bg-white shadow-sm p-12 rounded-3xl"> 
+           <div class="w-full md:w-4/5 py-12 flex-1">
+                    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-2">
+                            <!-- card   01 -->
+                        <div class="card w-full h-[360px] bg-white shadow-sm p-8 rounded-3xl"> 
                             <div class="flex justify-between items-center mb-4">
                             <img class="w-[34px] h-[34px] rounded-full bg-[#FFE3E2] p-2" src="./assets/emergency.png" alt="">
                             <button class="heart w-[24px] h-[24px] text-red-500 text-xl"><i class="fa-regular fa-heart"></i></button>
@@ -71,13 +84,14 @@
                                 <p class="mb-4 p-2 bg-[#F2F2F7] text-black inline-block rounded-3xl">All</p>
                             </div>
                         </div>
-                            <div class="flex justify-between">
-                                <button class="copyBtn flex hover:bg-gray-500 hover:text-white items-center gap-2 pr-10 pl-10 pt-2 pb-2 text-[#8C8C8C] rounded-lg border border-[#d9d9d9] shadow-sm">
+                            <div class="flex justify-between sm: gap-2">
+                                <button class="copyBtn flex hover:bg-gray-500 hover:text-white items-center pr-10 pl-10 pt-2 pb-2  text-[#8C8C8C] rounded-lg border border-[#d9d9d9] shadow-sm">
                                     <i class="fa-regular fa-copy"></i>Copy</button>
-                                <button class="callButton flex hover:bg-gray-500 hover:text-white items-center gap-2  pr-10 pl-10 pt-2 pb-2 text-[#ffffff] bg-[#00A63E] rounded-lg border border-[#d9d9d9] shadow-sm"> <i class="fa-solid fa-phone"></i>Call</button>
+                                <button  id="National-Emergency" class="callButton flex hover:bg-gray-500 hover:text-white items-center  pr-10 pl-10 pt-2 pb-2 text-[#ffffff] bg-[#00A63E] rounded-lg border border-[#d9d9d9] shadow-sm"> <i class="fa-solid fa-phone"></i>Call</button>
                             </div>
-                        </div> 
-                        <div class="card w-[450px] h-[360px] bg-white shadow-sm p-12 rounded-3xl">
+                        </div>
+                        <!-- card  02  -->
+                        <div class="card w-full h-[360px] bg-white shadow-sm p-8 rounded-3xl">
                             <div class="flex justify-between items-center mb-4">
                             <img class="w-[34px] h-[34px] rounded-full bg-[#FFE3E2] p-2" src="./assets/police.png" alt="">
                             <button class="heart w-[24px] h-[24px] text-red-500 text-xl"><i class="fa-regular fa-heart"></i></button>
@@ -90,13 +104,14 @@
                                 <p class="mb-4 p-2 bg-[#F2F2F7] text-black inline-block rounded-3xl">Police</p>
                             </div>
                         </div>
-                            <div class="flex justify-between">
-                                 <button class="flex hover:bg-gray-500 hover:text-white items-center gap-2 pr-10 pl-10 pt-2 pb-2 text-[#8C8C8C] rounded-lg border border-[#d9d9d9] shadow-sm">
+                            <div class="flex justify-between sm: gap-2">
+                                 <button class="flex hover:bg-gray-500 hover:text-white items-center  pr-10 pl-10 pt-2 pb-2 text-[#8C8C8C] rounded-lg border border-[#d9d9d9] shadow-sm">
                                     <i class="fa-regular fa-copy"></i>Copy</button>
-                                <button class="callButton flex hover:bg-gray-500 hover:text-white items-center gap-2  pr-10 pl-10 pt-2 pb-2 text-[#ffffff] bg-[#00A63E] rounded-lg border border-[#d9d9d9] shadow-sm"> <i class="fa-solid fa-phone"></i>Call</button>
+                                <button id="Police-Helpline-Number" class="callButton flex hover:bg-gray-500 hover:text-white items-center pr-10 pl-10 pt-2 pb-2 text-[#ffffff] bg-[#00A63E] rounded-lg border border-[#d9d9d9] shadow-sm"> <i class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
-                         <div class="card w-[450px] h-[360px] bg-white shadow-sm p-12 rounded-3xl">
+                        <!-- card   03 -->
+                         <div class="card w-full h-[360px] bg-white shadow-sm p-8 rounded-3xl">
                             <div class="flex justify-between items-center mb-4">
                             <img class="w-[34px] h-[34px] rounded-full bg-[#FFE3E2] p-2" src="./assets/fire-service.png" alt="">
                             <button class="heart w-[24px] h-[24px] text-red-500 text-xl"><i class="fa-regular fa-heart"></i></button>
@@ -109,13 +124,14 @@
                                 <p class="mb-4 p-2 bg-[#F2F2F7] text-black inline-block rounded-3xl">Fire</p>
                             </div>
                         </div>
-                            <div class="flex justify-between">
-                                 <button class="flex hover:bg-gray-500 hover:text-white items-center gap-2 pr-10 pl-10 pt-2 pb-2 text-[#8C8C8C] rounded-lg border border-[#d9d9d9] shadow-sm">
+                            <div class="flex justify-between sm: gap-2">
+                                 <button class="flex hover:bg-gray-500 hover:text-white items-center pr-10 pl-10 pt-2 pb-2 text-[#8C8C8C] rounded-lg border border-[#d9d9d9] shadow-sm">
                                     <i class="fa-regular fa-copy"></i>Copy</button>
-                                <button class="callButton flex hover:bg-gray-500 hover:text-white items-center gap-2  pr-10 pl-10 pt-2 pb-2 text-[#ffffff] bg-[#00A63E] rounded-lg border border-[#d9d9d9] shadow-sm"> <i class="fa-solid fa-phone"></i>Call</button>
+                                <button id="Fire-Service-Number" class="callButton flex hover:bg-gray-500 hover:text-white items-center pr-10 pl-10 pt-2 pb-2 text-[#ffffff] bg-[#00A63E] rounded-lg border border-[#d9d9d9] shadow-sm"> <i class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
-                         <div class="card w-[450px] h-[360px] bg-white shadow-sm p-12 rounded-3xl">
+                        <!-- card   04 -->
+                         <div class="card w-full h-[360px] bg-white shadow-sm p-8 rounded-3xl">
                             <div class="flex justify-between items-center mb-4">
                             <img class="w-[34px] h-[34px] rounded-full bg-[#FFE3E2] p-2" src="./assets/ambulance.png" alt="">
                             <button class="heart w-[24px] h-[24px] text-red-500 text-xl"><i class="fa-regular fa-heart"></i></button>
@@ -128,13 +144,14 @@
                                 <p class="mb-4 p-2 bg-[#F2F2F7] text-black inline-block rounded-3xl">Health</p>
                             </div>
                         </div>
-                            <div class="flex justify-between">
-                                <button class="flex hover:bg-gray-500 hover:text-white items-center gap-2 pr-10 pl-10 pt-2 pb-2 text-[#8C8C8C] rounded-lg border border-[#d9d9d9] shadow-sm">
+                            <div class="flex justify-between sm: gap-2">
+                                <button class="flex hover:bg-gray-500 hover:text-white items-center pr-10 pl-10 pt-2 pb-2 text-[#8C8C8C] rounded-lg border border-[#d9d9d9] shadow-sm">
                                     <i class="fa-regular fa-copy"></i>Copy</button>
-                                <button class="callButton flex hover:bg-gray-500 hover:text-white items-center gap-2  pr-10 pl-10 pt-2 pb-2 text-[#ffffff] bg-[#00A63E] rounded-lg border border-[#d9d9d9] shadow-sm"> <i class="fa-solid fa-phone"></i>Call</button>
+                                <button id="Ambulance-Service" class="callButton flex hover:bg-gray-500 hover:text-white items-center pr-10 pl-10 pt-2 pb-2 text-[#ffffff] bg-[#00A63E] rounded-lg border border-[#d9d9d9] shadow-sm"> <i class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
-                         <div class="card w-[450px] h-[360px] bg-white shadow-sm p-12 rounded-3xl">
+                        <!-- card   05 -->
+                         <div class="card w-full h-[360px] bg-white shadow-sm p-8 rounded-3xl">
                             <div class="flex justify-between items-center mb-4">
                             <img class="w-[34px] h-[34px] rounded-full bg-[#FFE3E2] p-2" src="./assets/emergency.png" alt="">
                             <button class="heart w-[24px] h-[24px] text-red-500 text-xl"><i class="fa-regular fa-heart"></i></button>
@@ -147,13 +164,14 @@
                                 <p class="mb-4 p-2 bg-[#F2F2F7] text-black inline-block rounded-3xl">Help</p>
                             </div>
                         </div>
-                            <div class="flex justify-between">
-                                 <button class="flex hover:bg-gray-500 hover:text-white items-center gap-2 pr-10 pl-10 pt-2 pb-2 text-[#8C8C8C] rounded-lg border border-[#d9d9d9] shadow-sm">
+                            <div class="flex justify-between items-center sm: gap-2">
+                                 <button class="flex hover:bg-gray-500 hover:text-white items-center pr-10 pl-10 pt-2 pb-2 text-[#8C8C8C] rounded-lg border border-[#d9d9d9] shadow-sm">
                                     <i class="fa-regular fa-copy"></i>Copy</button>
-                                <button class="callButton flex hover:bg-gray-500 hover:text-white items-center gap-2  pr-10 pl-10 pt-2 pb-2 text-[#ffffff] bg-[#00A63E] rounded-lg border border-[#d9d9d9] shadow-sm"> <i class="fa-solid fa-phone"></i>Call</button>
+                                <button id="Women-&-Child-Helpline" class="callButton flex hover:bg-gray-500 hover:text-white items-center pr-10 pl-10 pt-2 pb-2 text-[#ffffff] bg-[#00A63E] rounded-lg border border-[#d9d9d9] shadow-sm"> <i class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
-                         <div class="card w-[450px] h-[360px] bg-white shadow-sm p-12 rounded-3xl">
+                        <!-- card   06 -->
+                         <div class="card w-full h-[360px] bg-white shadow-sm p-8 rounded-3xl">
                             <div class="flex justify-between items-center mb-4">
                             <img class="w-[34px] h-[34px] rounded-full bg-[#FFE3E2] p-2" src="./assets/emergency.png" alt="">
                             <button class="heart w-[24px] h-[24px] text-red-500 text-xl"><i class="fa-regular fa-heart"></i></button>
@@ -166,13 +184,14 @@
                                 <p class="mb-4 p-2 bg-[#F2F2F7] text-black inline-block rounded-3xl">Govt.</p>
                             </div>
                         </div>
-                            <div class="flex justify-between">
-                                 <button class="flex hover:bg-gray-500 hover:text-white items-center gap-2 pr-10 pl-10 pt-2 pb-2 text-[#8C8C8C] rounded-lg border border-[#d9d9d9] shadow-sm">
+                            <div class="flex justify-between sm: gap-2">
+                                 <button class="flex hover:bg-gray-500 hover:text-white items-center pr-10 pl-10 pt-2 pb-2 text-[#8C8C8C] rounded-lg border border-[#d9d9d9] shadow-sm">
                                     <i class="fa-regular fa-copy"></i>Copy</button>
-                                <button class="callButton flex hover:bg-gray-500 hover:text-white items-center gap-2  pr-10 pl-10 pt-2 pb-2 text-[#ffffff] bg-[#00A63E] rounded-lg border border-[#d9d9d9] shadow-sm"> <i class="fa-solid fa-phone"></i>Call</button>
+                                <button id="Anti-Corruption-Helpline" class="callButton flex hover:bg-gray-500 hover:text-white items-center pr-10 pl-10 pt-2 pb-2 text-[#ffffff] bg-[#00A63E] rounded-lg border border-[#d9d9d9] shadow-sm"> <i class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
-                         <div class="card w-[450px] h-[360px] bg-white shadow-sm p-12 rounded-3xl">
+                        <!-- card    07 -->
+                         <div class="card w-full h-[360px] bg-white shadow-sm p-8 rounded-3xl">
                             <div class="flex justify-between items-center mb-4">
                             <img class="w-[34px] h-[34px] rounded-full bg-[#FFE3E2] p-2" src="./assets/emergency.png" alt="">
                            <button class="heart w-[24px] h-[24px] text-red-500 text-xl"><i class="fa-regular fa-heart"></i></button>
@@ -185,13 +204,14 @@
                                 <p class="mb-4 p-2 bg-[#F2F2F7] text-black inline-block rounded-3xl">Electricity</p>
                             </div>
                         </div>
-                            <div class="flex justify-between">
-                                 <button class="flex hover:bg-gray-500 hover:text-white items-center gap-2 pr-10 pl-10 pt-2 pb-2 text-[#8C8C8C] rounded-lg border border-[#d9d9d9] shadow-sm">
+                            <div class="flex justify-between sm: gap-2">
+                                 <button class="flex hover:bg-gray-500 hover:text-white items-center pr-10 pl-10 pt-2 pb-2 text-[#8C8C8C] rounded-lg border border-[#d9d9d9] shadow-sm">
                                     <i class="fa-regular fa-copy"></i>Copy</button>
-                                <button class="callButton flex hover:bg-gray-500 hover:text-white items-center gap-2  pr-10 pl-10 pt-2 pb-2 text-[#ffffff] bg-[#00A63E] rounded-lg border border-[#d9d9d9] shadow-sm"> <i class="fa-solid fa-phone"></i>Call</button>
+                                <button id="Electricity-Helpline" class="callButton flex hover:bg-gray-500 hover:text-white items-center pr-10 pl-10 pt-2 pb-2 text-[#ffffff] bg-[#00A63E] rounded-lg border border-[#d9d9d9] shadow-sm"> <i class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
-                         <div class="card w-[450px] h-[360px] bg-white shadow-sm p-12 rounded-3xl">
+                        <!-- card    08 -->
+                         <div class="card w-full h-[360px] bg-white shadow-sm p-8 rounded-3xl">
                             <div class="flex justify-between items-center mb-4">
                             <img class="w-[34px] h-[34px] rounded-full bg-[#FFE3E2] p-2" src="./assets/brac.png" alt="">
                             <button class="heart w-[24px] h-[24px] text-red-500 text-xl"><i class="fa-regular fa-heart"></i></button>
@@ -204,13 +224,14 @@
                                 <p class="mb-4 p-2 bg-[#F2F2F7] text-black inline-block rounded-3xl">NGO</p>
                             </div>
                         </div>
-                            <div class="flex justify-between">
-                                 <button class="flex hover:bg-gray-500 hover:text-white items-center gap-2 pr-10 pl-10 pt-2 pb-2 text-[#8C8C8C] rounded-lg border border-[#d9d9d9] shadow-sm">
+                            <div class="flex justify-between sm: gap-2">
+                                 <button class="flex hover:bg-gray-500 hover:text-white items-center pr-10 pl-10 pt-2 pb-2 text-[#8C8C8C] rounded-lg border border-[#d9d9d9] shadow-sm">
                                     <i class="fa-regular fa-copy"></i>Copy</button>
-                                <button class="callButton flex hover:bg-gray-500 hover:text-white items-center gap-2  pr-10 pl-10 pt-2 pb-2 text-[#ffffff] bg-[#00A63E] rounded-lg border border-[#d9d9d9] shadow-sm"> <i class="fa-solid fa-phone"></i>Call</button>
+                                <button id="Brac-Helpline" class="callButton flex hover:bg-gray-500 hover:text-white items-center pr-10 pl-10 pt-2 pb-2 text-[#ffffff] bg-[#00A63E] rounded-lg border border-[#d9d9d9] shadow-sm"> <i class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
-                         <div class="card w-[450px] h-[360px] bg-white shadow-sm p-12 rounded-3xl">
+                        <!-- card  09 -->
+                         <div class="card w-full h-[360px] bg-white shadow-sm p-8 rounded-3xl">
                             <div class="flex justify-between items-center mb-4">
                             <img class="w-[34px] h-[34px] rounded-full bg-[#FFE3E2] p-2" src="./assets/Bangladesh-Railway.png" alt="">
                             <button class="heart w-[24px] h-[24px] text-red-500 text-xl"><i class="fa-regular fa-heart"></i></button>
@@ -223,18 +244,18 @@
                                 <p class="mb-4 p-2 bg-[#F2F2F7] text-black inline-block rounded-3xl">Travel</p>
                             </div>
                         </div>
-                            <div class="flex justify-between">
-                                <button class="flex hover:bg-gray-500 hover:text-white items-center gap-2 pr-10 pl-10 pt-2 pb-2 text-[#8C8C8C] rounded-lg border border-[#d9d9d9] shadow-sm">
+                            <div class="flex justify-between sm: gap-2">
+                                <button class="flex hover:bg-gray-500 hover:text-white items-center pr-10 pl-10 pt-2 pb-2 text-[#8C8C8C] rounded-lg border border-[#d9d9d9] shadow-sm">
                                     <i class="fa-regular fa-copy"></i>Copy</button>
-                                <button class="callButton flex hover:bg-gray-500 hover:text-white items-center gap-2  pr-10 pl-10 pt-2 pb-2 text-[#ffffff] bg-[#00A63E] rounded-lg border border-[#d9d9d9] shadow-sm"> <i class="fa-solid fa-phone"></i>Call</button>
+                                <button id="Bangladesh-Railway-Helpline" class="callButton flex hover:bg-gray-500 hover:text-white items-center pr-10 pl-10 pt-2 pb-2 text-[#ffffff] bg-[#00A63E] rounded-lg border border-[#d9d9d9] shadow-sm"> <i class="fa-solid fa-phone"></i>Call</button>
                             </div>
                         </div>
                     </div>
-            </div>  
+            </div>   
 
                 <!-- Left div - 20% -->
 
-            <div class="w-1/5 flex justify-between items-start bg-white px-10 py-12 mt-12 mb-12 rounded-3xl">
+            <!-- <div class="w-1/5 flex justify-between items-start bg-white px-10 py-12 mt-12 mb-12 rounded-3xl">
                 <div class="flex gap-2 pt-2">
                     <i class="fa-solid fa-clock mt-[2px]"></i>
                     <h4 class="leading-tight">Call History</h4>
@@ -243,41 +264,25 @@
                 <div>
                     <button class="px-8 py-2  hover:bg-gray-500 hover:text-white bg-[#00A63E] text-white rounded-3xl">Copy</button>
                 </div>
+            </div> -->
+
+
+            <div class="w-full md:w-1/5 flex justify-between items-start bg-white px-10 py-12 mt-4 md:mt-12 mb-12 rounded-3xl">
+                <div class="flex gap-2 pt-2">
+                    <i class="fa-solid fa-clock mt-[2px]"></i>
+                    <h4 class="leading-tight">Call History</h4>
+                </div>
+
+                <div>
+                    <button class="px-8 py-2 hover:bg-gray-500 hover:text-white bg-[#00A63E] text-white rounded-3xl">Clear</button>
+                </div>
             </div>
 
-    </div>
+    </div> 
     
 
-        <script> 
-            //   add love coine
-                const hearts = document.querySelectorAll('.heart');
-                const countSpan = document.querySelector('.count span');
 
-                hearts.forEach(heart => {
-                    heart.addEventListener('click', () => {
-                        let currentCount = parseInt(countSpan.textContent);
-                        currentCount++;
-                        countSpan.textContent = currentCount;
-                    });
-                });
-
-                    // Subtraction call for 20 coins
-
-                    const coinSpan = document.querySelector(".coins span");
-                    const callButtons = document.querySelectorAll(".callButton");
-
-                    callButtons.forEach(button => {
-                        button.addEventListener("click", () => {
-                        let currentCoins = parseInt(coinSpan.innerText);
-                        if (currentCoins >= 20) {
-                            currentCoins -= 20;
-                            coinSpan.innerText = currentCoins;
-                        } else {
-                            alert("Not enough coins!");
-                        }
-                        });
-                    });
-        </script>
+        <script src="./index.js"> </script>
 
 
 </body>
