@@ -64,3 +64,45 @@
                         .addEventListener('click' ,function(){
                             alert('Bangladesh Railway Helpline 163');
                         });
+
+
+                      
+                    // Call button select-1
+              
+          
+                    const callBtn = document.getElementsByClassName('callButton')[0];
+
+              
+                    callBtn.addEventListener('click', function() {
+                    
+                        const titleText = document.getElementsByClassName('title-1')[0].innerText;
+
+                      
+                        const historyTitle = document.querySelector('.mt-4 h1');
+
+                        // h1 এর ভেতরে নতুন টেক্সট বসালাম
+                        historyTitle.innerText = titleText;
+                           
+                    });
+
+                // Copy button select
+                // const copyBtn = document.getElementsByClassName('copyBtn')[0];
+
+                // copyBtn.addEventListener('click', function() {
+                //     // title-1 থেকে টেক্সট নিলাম
+                //     const titleText = document.getElementsByClassName('title-1')[0].innerText;
+
+                //     // বর্তমান সময় নিলাম
+                //     const now = new Date();
+                //     const timeString = now.toLocaleTimeString(); // যেমন: 4:35:12 PM
+
+                //     // Call History ব্লকের .mt-4 div ধরলাম
+                //     const historyDiv = document.querySelector('.mt-4');
+
+                //     // নতুন p এলিমেন্ট বানালাম
+                //     const newEntry = document.createElement('p');
+                //     newEntry.innerText = `${titleText} - ${timeString}`;
+
+                //     // h1 এর নিচে নতুন লাইন হিসেবে যোগ করলাম
+                //     historyDiv.appendChild(newEntry);
+                // });
