@@ -67,42 +67,127 @@
 
 
                       
-                    // Call button select-1
-              
-          
-                    const callBtn = document.getElementsByClassName('callButton')[0];
+                   
+                        // Function
+                    function addToHistory(titleText) {
+                        const historyDiv = document.querySelector('.mt-4'); // history container select
+                        const newTitle = document.createElement('h1');
+                        newTitle.innerText = titleText;
+                        historyDiv.appendChild(newTitle);
+                    }
 
-              
-                    callBtn.addEventListener('click', function() {
-                    
+                    // Call button-1 
+                    const callBtn1 = document.getElementsByClassName('button-1')[0];
+                    callBtn1.addEventListener('click', function() {
                         const titleText = document.getElementsByClassName('title-1')[0].innerText;
-
-                      
-                        const historyTitle = document.querySelector('.mt-4 h1');
-
-                        // h1 এর ভেতরে নতুন টেক্সট বসালাম
-                        historyTitle.innerText = titleText;
-                           
+                        addToHistory(titleText);
+                    });
+                                                                                   
+                    // Call button select-2
+                const callBtn2 = document.getElementsByClassName('button-2')[0];
+                    callBtn2.addEventListener('click', function() {                     
+                        const titleText = document.getElementsByClassName('title-2')[0].innerText;                    
+                        addToHistory(titleText);
+                    });
+                    
+                       // Call button select-3
+                const callBtn3 = document.getElementsByClassName('button-3')[0];
+                    callBtn3.addEventListener('click', function(){
+                       const titleText = document.getElementsByClassName('title-3')[0].innerText;
+                       addToHistory(titleText);
                     });
 
-                // Copy button select
-                // const copyBtn = document.getElementsByClassName('copyBtn')[0];
+                    // Call button select-4
+                const callBtn4 = document.getElementsByClassName('button-4')[0];
+                    callBtn4.addEventListener('click', function(){
+                        const titleText = document.getElementsByClassName('title-4')[0].innerText;
+                        addToHistory(titleText);
+                    });
+                    
+                    // Call button select-5
+                const callBtn5 = document.getElementsByClassName('button-5')[0];
+                    callBtn5.addEventListener('click', function(){
+                        const titleText = document.getElementsByClassName('title-5')[0].innerText;
+                        addToHistory(titleText);
+                    });
 
-                // copyBtn.addEventListener('click', function() {
-                //     // title-1 থেকে টেক্সট নিলাম
-                //     const titleText = document.getElementsByClassName('title-1')[0].innerText;
+                     // Call button select-6
+                const callBtn6 = document.getElementsByClassName('button-6')[0];
+                    callBtn6.addEventListener('click', function (){
+                        const titleText = document.getElementsByClassName('title-6')[0].innerText;
+                       addToHistory(titleText);
+                    });
+                
+                    // Call button select-7
+                const callBtn7 = document.getElementsByClassName('button-7')[0];
+                    callBtn7.addEventListener('click', function(){
+                        const titleText = document.getElementsByClassName('title-7')[0].innerText;
+                        addToHistory(titleText);
+                    });
 
-                //     // বর্তমান সময় নিলাম
-                //     const now = new Date();
-                //     const timeString = now.toLocaleTimeString(); // যেমন: 4:35:12 PM
+                    // Call button select-8
+                const callBtn8 = document.getElementsByClassName('button-8')[0];
+                    callBtn8.addEventListener('click', function(){
+                        const titleText = document.getElementsByClassName('title-8')[0].innerText;
+                        addToHistory(titleText);
+                    });
 
-                //     // Call History ব্লকের .mt-4 div ধরলাম
-                //     const historyDiv = document.querySelector('.mt-4');
+                     // Call button select-9
+                const callBtn9 = document.getElementsByClassName('button-9')[0];
+                    callBtn9.addEventListener('click', function(){
+                        const titleText = document.getElementsByClassName('title-9')[0].innerText;
+                        addToHistory(titleText);
+                    });
 
-                //     // নতুন p এলিমেন্ট বানালাম
-                //     const newEntry = document.createElement('p');
-                //     newEntry.innerText = `${titleText} - ${timeString}`;
+                        // Copy button
+                const copyBtn1 = document.getElementsByClassName('copyBtn-1');
+                    copyBtn1.addEventListener('click', function() {
+                    const titleText = document.querySelector('.title-1').innerText; 
+                    navigator.clipboard.writeText(titleText);
+                });
+                const copyBtn2 = document.getElementsByClassName('copyBtn-2');
+                    copyBtn2.addEventListener('click', function() {
+                    const titleText = document.querySelector('.title-2').innerText; 
+                    navigator.clipboard.writeText(titleText);  
+                });
+                const copyBtn3 = document.getElementsByClassName('copyBtn-3');
+                    copyBtn3.addEventListener('click', function() {
+                    const titleText = document.querySelector('.title-3').innerText; 
+                    navigator.clipboard.writeText(titleText)  
+                });
+                const copyBtn4 = document.querySelector('.copyBtn-4');
+                    copyBtn4.addEventListener('click', function() {
+                    const titleText = document.querySelector('.title-4').innerText;
+                    navigator.clipboard.writeText(titleText)  
+                });
+                const copyBtn5 = document.getElementsByClassName('.copyBtn-5');
+                    copyBtn5.addEventListener('click', function() {
+                    const titleText = document.querySelector('.title-5').innerText; 
+                    navigator.clipboard.writeText(titleText) 
+                });
+                const copyBtn6 = document.getElementsByClassName('.copyBtn-6');
+                    copyBtn6.addEventListener('click', function() {
+                    const titleText = document.querySelector('.title-6').innerText; 
+                    navigator.clipboard.writeText(titleText)
+                });
+                const copyBtn7 = document.getElementsByClassName('.copyBtn-7');
+                    copyBtn7.addEventListener('click', function() {
+                    const titleText = document.querySelector('.title-7').innerText; 
+                    navigator.clipboard.writeText(titleText)  
+                });
+                const copyBtn8 = document.getElementsByClassName('.copyBtn-8');
+                    copyBtn8.addEventListener('click', function() {
+                    const titleText = document.querySelector('.title-8').innerText; 
+                    navigator.clipboard.writeText(titleText)  
+                });
+                const copyBtn9 = document.getElementsByClassName('.copyBtn-9');
+                    copyBtn9.addEventListener('click', function() {
+                    const titleText = document.querySelector('.title-9').innerText; 
+                    navigator.clipboard.writeText(titleText)  
+                });
 
-                //     // h1 এর নিচে নতুন লাইন হিসেবে যোগ করলাম
-                //     historyDiv.appendChild(newEntry);
-                // });
+
+
+           
+
+                
